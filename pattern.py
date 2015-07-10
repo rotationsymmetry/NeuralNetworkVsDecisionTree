@@ -4,19 +4,18 @@ from sklearn import tree
 
 
 class BaseScenario:
-    def __init__(self, n1, n2, p, seed):
+    def __init__(self, n1, n2, p):
         self.n1 = n1
         self.n2 = n2
         self.p = p
-        self.seed = seed
 
     def generate_data(self, n, seed):
         return NotImplementedError
 
-    def run(self, model):
+    def run(self, model, seed):
         # generate training and test data
-        training_features, training_labels = self.generate_data(self.n1, self.seed)
-        test_features, test_labels = self.generate_data(self.n2, self.seed+1000)
+        training_features, training_labels = self.generate_data(self.n1, seed)
+        test_features, test_labels = self.generate_data(self.n2, seed+1000)
         # fit model and make predictions
         model.fit(training_features, training_labels)
         predictions = model.predict(test_features).flatten()
@@ -37,7 +36,7 @@ class Comparator:
         self.nsim = nsim
 
     def compare(self):
-        errors = [self.single_compare() for k in range(self.nsim)]
+        errors = [self.single_compare(k) for k in range(self.nsim)]
 
         def avg_error(error):
             return sum(error)/len(error)
@@ -48,17 +47,18 @@ class Comparator:
         print("{0}: avg_error1={1}  avg_error2={2} avg_error3={3}".format(self.scenario.__str__(), avg_error1, avg_error2, avg_error3))
         return avg_error1, avg_error2
 
-    def single_compare(self):
-        error1 = self.scenario.run(self.model1)
-        error2 = self.scenario.run(self.model2)
-        error3 = self.scenario.run(self.model3)
+    def single_compare(self, seed):
+
+        error1 = self.scenario.run(self.model1, seed)
+        error2 = self.scenario.run(self.model2, seed)
+        error3 = self.scenario.run(self.model3, seed)
         print("{0}: error1={1}  error2={2} error3={3}".format(self.scenario.__str__(), error1, error2, error3))
         return error1, error2, error3
 
 
 class PatternScenario(BaseScenario):
-    def __init__(self, n1, n2, p, w0, w1, seed):
-        super().__init__(n1, n2, p, seed)
+    def __init__(self, n1, n2, p, w0, w1):
+        super().__init__(n1, n2, p)
         self.w0 = w0
         self.w1 = w1
 
@@ -66,8 +66,6 @@ class PatternScenario(BaseScenario):
         return "n1={0} p={1} w0={2} w1={3}".format(self.n1, self.p, self.w0, self.w1)
 
     def generate_data(self, n, seed):
-        numpy.random.seed(seed)
-
         def f(width):
             r = [0 for i in range(self.p)]
             pos = numpy.random.randint(width, self.p-width, size=1)
@@ -86,6 +84,7 @@ class PatternScenario(BaseScenario):
             else:
                 return 1 - v
 
+        numpy.random.seed(seed)
         truth = numpy.random.randint(low=0, high=2, size=n)
         features = numpy.array([g(i) for i in truth])
         labels = numpy.array([flip(v) for v in truth])
