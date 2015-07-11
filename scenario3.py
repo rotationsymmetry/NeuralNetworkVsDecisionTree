@@ -5,7 +5,7 @@ from sklearn import tree
 
 p = 500
 
-s = PatternScenario(400, 10000, p, 20, 25)
+s = PatternScenario(400, 10000, p, 80, 85)
 
 nn_clf = Classifier(
     layers=[

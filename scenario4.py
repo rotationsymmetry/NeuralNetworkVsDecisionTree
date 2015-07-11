@@ -3,7 +3,7 @@ from sknn.mlp import Classifier, Layer
 from sklearn import tree
 
 
-p = 500
+p = 1000
 
 s = PatternScenario(400, 10000, p, 20, 25)
 
