@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718d542f-ca13-457f-b7d4-63f80d8c9782" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scenario1.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/45_nn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/45_tree_entropy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/45_tree_gini.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/45n_nn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/45n_tree_gini.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/BaseScenario.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/and_or_nn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/and_or_scenario.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/and_or_tree_gini.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/circle_nn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/circle_scenario.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/circle_tree.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forty_five_and_or.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forty_five_normal_scenario.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/forty_five_scenario.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/parity.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pattern_gini.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scenario1.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pattern.py" afterPath="$PROJECT_DIR$/pattern.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scenario1.py" afterPath="$PROJECT_DIR$/scenario1.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="code.iws" />
@@ -43,8 +26,9 @@
     <SUITE FILE_PATH="coverage/code$forty_five_normal_scenario.coverage" NAME="forty_five_normal_scenario Coverage Results" MODIFIED="1436043432740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$pattern.coverage" NAME="pattern Coverage Results" MODIFIED="1436508857295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$and_or_scenario.coverage" NAME="and_or_scenario Coverage Results" MODIFIED="1436048338587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/code$scenario1.coverage" NAME="scenario1 Coverage Results" MODIFIED="1436539515135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$scenario1.coverage" NAME="scenario1 Coverage Results" MODIFIED="1436577578573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/code$forty_five_and_or.coverage" NAME="forty_five_and_or Coverage Results" MODIFIED="1436054351842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/code$scenario2.coverage" NAME="scenario2 Coverage Results" MODIFIED="1436576475677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -58,8 +42,8 @@
       <file leaf-file-name="pattern.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pattern.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3620352">
-              <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.30332682">
+              <caret line="49" column="87" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -71,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/scenario1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
               </folding>
@@ -103,6 +87,7 @@
         <option value="$PROJECT_DIR$/forty_five_and_or.py" />
         <option value="$PROJECT_DIR$/parity.py" />
         <option value="$PROJECT_DIR$/BaseScenario.py" />
+        <option value="$PROJECT_DIR$/scenario2.py" />
         <option value="$PROJECT_DIR$/scenario1.py" />
         <option value="$PROJECT_DIR$/pattern.py" />
       </list>
@@ -177,24 +162,6 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager" selected="Python.scenario1">
-    <configuration default="false" name="and_or_scenario" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="code" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/and_or_scenario.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="forty_five_and_or" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -263,6 +230,24 @@
       <module name="code" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scenario1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="scenario2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="code" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scenario2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -456,19 +441,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.and_or_scenario" />
-      <item index="1" class="java.lang.String" itemvalue="Python.forty_five_and_or" />
-      <item index="2" class="java.lang.String" itemvalue="Python.parity" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pattern" />
-      <item index="4" class="java.lang.String" itemvalue="Python.scenario1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.forty_five_and_or" />
+      <item index="1" class="java.lang.String" itemvalue="Python.parity" />
+      <item index="2" class="java.lang.String" itemvalue="Python.pattern" />
+      <item index="3" class="java.lang.String" itemvalue="Python.scenario1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.scenario2" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.scenario1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pattern" />
-        <item index="2" class="java.lang.String" itemvalue="Python.parity" />
-        <item index="3" class="java.lang.String" itemvalue="Python.forty_five_and_or" />
-        <item index="4" class="java.lang.String" itemvalue="Python.and_or_scenario" />
+        <item index="1" class="java.lang.String" itemvalue="Python.scenario2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pattern" />
+        <item index="3" class="java.lang.String" itemvalue="Python.parity" />
+        <item index="4" class="java.lang.String" itemvalue="Python.forty_five_and_or" />
       </list>
     </recent_temporary>
   </component>
@@ -501,7 +486,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -571,7 +556,7 @@
     <entry file="file://$PROJECT_DIR$/scenario1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
@@ -580,8 +565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pattern.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3620352">
-          <caret line="47" column="61" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.30332682">
+          <caret line="49" column="87" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>

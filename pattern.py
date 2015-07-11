@@ -44,7 +44,11 @@ class Comparator:
         avg_error1 = avg_error([e[0] for e in errors])
         avg_error2 = avg_error([e[1] for e in errors])
         avg_error3 = avg_error([e[2] for e in errors])
-        print("{0}: avg_error1={1}  avg_error2={2} avg_error3={3}".format(self.scenario.__str__(), avg_error1, avg_error2, avg_error3))
+
+        better_prob = sum([e[0] <= e[1] and e[0] <= e[2] for e in errors]) / len(errors)
+
+        print("{0}: avg_error1={1:.1f}  avg_error2={2:.1f} avg_error3={3:.1f} => {4:.1f}"
+              .format(self.scenario.__str__(), avg_error1*100, avg_error2*100, avg_error3*100, better_prob*100))
         return avg_error1, avg_error2
 
     def single_compare(self, seed):
@@ -52,7 +56,7 @@ class Comparator:
         error1 = self.scenario.run(self.model1, seed)
         error2 = self.scenario.run(self.model2, seed)
         error3 = self.scenario.run(self.model3, seed)
-        print("{0}: error1={1}  error2={2} error3={3}".format(self.scenario.__str__(), error1, error2, error3))
+        print("{0}: error1={1:.1f}  error2={2:.1f} error3={3:.1f}".format(self.scenario.__str__(), error1*100, error2*100, error3*100))
         return error1, error2, error3
 
 
