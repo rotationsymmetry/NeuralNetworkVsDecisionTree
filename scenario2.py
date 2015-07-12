@@ -3,9 +3,9 @@ from sknn.mlp import Classifier, Layer
 from sklearn import tree
 
 
-p = 1000
+p = 800
 
-s = PatternScenario(400, 10000, p, 20, 25)
+s = PatternScenario(600, 10000, p, 10, 15)
 
 nn_clf = Classifier(
     layers=[
